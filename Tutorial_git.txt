@@ -6,7 +6,7 @@ Cara menggunakan github
 3. git config user.email "MY_NAME@example.com" (masukan email github)
 4. git add (tambahkan file yang akan di upload ke git)
 5. git commit -m "first commit" (Commit berfungsi untuk menambahkan update file serta komentar)
-6. git remote add origin https://github.com/USERNAME/REPOSITORY.git (Remote repository berfungsi untuk mengupload file yang telah Anda buat sebelumnya di local disk)
+6. git remote add origin https://github.com/fachryalkaff/tutorial_git.git (Remote repository berfungsi untuk mengupload file yang telah Anda buat sebelumnya di local disk)
 7. git push -u origin master (upload file ke github)
 8. cek file di github
 9. selesai
