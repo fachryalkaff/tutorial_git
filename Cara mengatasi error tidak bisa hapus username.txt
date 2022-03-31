@@ -1,0 +1,1009 @@
+Jika ada error seperti ini 
+ORA-00604: error occurred at recursive SQL level 1
+ORA-00942: table or view does not exist 
+
+yang dilakukan adalah 
+1. set ORACLE_HOME jika ORACLE_HOME tidak ada di system variables
+2. Cari tempat instal oracle. Kalo pc saya di C:\oraclexe\app\oracle\product\11.2.0\server
+3. Lalu cari file @$ORACLE_HOME/rdbms/admin/catqueue.sql . Kalo di pc saya path: @C:\oraclexe\app\oracle\product\11.2.0\server\rdbms\admin\catqueue.sql
+4. jalankan script: @C:\oraclexe\app\oracle\product\11.2.0\server\rdbms\admin\catqueue.sql
+5. Dan lihat lognya setelah jalankan script 
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+create sequence invalidation_reg_id$          /* registration sequence number */
+                *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+create table sys.reg$
+                 *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+create index reg$_idx on reg$ (subscription_name, namespace, location_name, reg_id)
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+create index sys.reg$_t on sys.reg$ (timeout)
+                 *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+create table sys.loc$
+                 *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+
+View created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+View created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+CREATE TYPE sys.aq$_agent
+            *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE TYPE sys.aq$_dequeue_history
+            *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE TYPE sys.aq$_subscribers
+            *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE TYPE sys.aq$_recipients
+            *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE TYPE sys.aq$_history
+            *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE TYPE sys.aq$_dequeue_history_t
+            *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE TYPE sys.aq$_notify_msg AS OBJECT (
+            *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE TYPE sys.aq$_sig_prop
+            *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+create TYPE aq$_midarray as varray(1024) of VARCHAR2(32);
+            *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Table created.
+
+
+Index created.
+
+CREATE TABLE system.aq$_queues(
+                    *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+create index system.i1_queues on system.aq$_queues(name, eventid, table_objno)
+                    *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE TABLE sys.aq$_replay_info(
+                 *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE TABLE sys.aq$_queue_table_affinities(
+                 *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE INDEX sys.i1_queue_table_affinities on sys.aq$_queue_table_affinities(
+                 *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE TABLE sys.aq$_subscriber_table(
+                 *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE INDEX sys.aq$_subscriber_table_i ON sys.aq$_subscriber_table(subscriber_type)
+                 *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+
+1 row deleted.
+
+
+0 rows deleted.
+
+
+1 row created.
+
+
+Context created.
+
+CREATE TABLE system.aq$_schedules(
+                    *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE TABLE sys.aq$_schedules(
+                 *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE TABLE sys.aq$_message_types(
+                 *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE TABLE sys.aq$_propagation_status(
+                 *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE TABLE sys.aq$_pending_messages(
+                 *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE INDEX sys.aq$_pending_messages_i
+                 *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE SEQUENCE sys.aq$_propagation_sequence START WITH 1
+                    *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE TABLE sys.aq$_queue_statistics(
+                 *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+create table aq$_publisher(
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+
+6 rows deleted.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+
+9 rows deleted.
+
+
+1 row deleted.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+
+View created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+View created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+View created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+View created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+View created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+View created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+View created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+View created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+View created.
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+View created.
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+View created.
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+View created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+View created.
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+View created.
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+Table created.
+
+
+Table created.
+
+
+View created.
+
+
+Synonym created.
+
+
+View created.
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+View created.
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+View created.
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+CREATE SEQUENCE sys.aq$_chainseq START WITH 1
+                    *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE SEQUENCE sys.aq$_iotenqtxid START WITH 1 CACHE 1000
+                    *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE SEQUENCE sys.aq$_rule_set_sequence START WITH 1 CACHE 1000
+                    *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE SEQUENCE sys.aq$_rule_sequence START WITH 1 CACHE 1000
+                    *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE SEQUENCE sys.aq$_publisher_sequence START WITH 1 CACHE 1000
+                    *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE SEQUENCE sys.aq$_nondursub_sequence INCREMENT BY 1 START WITH 1
+                    *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+
+Library created.
+
+
+Library created.
+
+
+Library created.
+
+
+Library created.
+
+CREATE or replace TYPE sys.msg_prop_t AS OBJECT (
+*
+ERROR at line 1:
+ORA-02303: cannot drop or replace a type with type or table dependents
+
+
+CREATE or replace TYPE sys.aq$_ntfn_descriptor AS OBJECT (
+*
+ERROR at line 1:
+ORA-02303: cannot drop or replace a type with type or table dependents
+
+
+CREATE or replace TYPE sys.aq$_ntfn_msgid_array
+*
+ERROR at line 1:
+ORA-02303: cannot drop or replace a type with type or table dependents
+
+
+
+Type created.
+
+CREATE  or replace TYPE sys.aq$_reg_info AS OBJECT (
+*
+ERROR at line 1:
+ORA-02303: cannot drop or replace a type with type or table dependents
+
+
+CREATE  or replace TYPE sys.aq$_post_info AS OBJECT (
+*
+ERROR at line 1:
+ORA-02303: cannot drop or replace a type with type or table dependents
+
+
+
+Type created.
+
+
+Type created.
+
+CREATE OR REPLACE TYPE sys.aq$_event_message
+*
+ERROR at line 1:
+ORA-02303: cannot drop or replace a type with type or table dependents
+
+
+
+Type created.
+
+CREATE OR REPLACE TYPE sys.aq$_subscriber
+*
+ERROR at line 1:
+ORA-02303: cannot drop or replace a type with type or table dependents
+
+
+
+Type created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Type created.
+
+
+Grant succeeded.
+
+CREATE ROLE aq_administrator_role
+            *
+ERROR at line 1:
+ORA-01921: role name 'AQ_ADMINISTRATOR_ROLE' conflicts with another user or
+role name
+
+
+
+Grant succeeded.
+
+CREATE ROLE aq_user_role
+            *
+ERROR at line 1:
+ORA-01921: role name 'AQ_USER_ROLE' conflicts with another user or role name
+
+drop user yang ingin dihapus contoh : drop user foo cascade;

@@ -1,0 +1,19 @@
+Jika mengalami error Vm tidak bisa dibuka yang dilakukan adalah 
+
+1. Download file Windows ADK di https://docs.microsoft.com/it-it/windows-hardware/get-started/adk-install kemudian Download the Windows ADK for Windows 10, version 1903 
+2. jika sudah instal file tersebut dan checklist
+ ✔ Application compability tools
+ ✔ deployment tools
+ ✔ imaging and configuration designer (ICD)
+ ✔ configuration designer
+ ✔ user state migration tools (USMT)
+ ✔	windows performance tools 
+ ✔ microsoft user experience virtualization (UE-V) template
+3. lalu klik instal/next dan tunggu hingga selesai (butuh waktu lumayan lama kalo baru instal)
+4. jika telah selesai cari compatibility Administrator (32-bit) di search windows kemudian klik untuk membukanya
+5. klik system database (64 bit) -> applications -> VMware Workstation Pro
+6. Kemudian klik kanan  disable entry vmplayer.exe dan vmware.exe dan 
+7. buka vmware player
+8. selesai
+
+source : https://www.youtube.com/watch?v=t1-TYyfoH78
